@@ -6,10 +6,10 @@ ModelClient
 
    `Li Yin <https://github.com/liyin2015>`_
 
-What you will learn?
+What will you learn?
 
 1. What is ``ModelClient`` and why is it designed this way?
-2. How to intergrate your own ``ModelClient``?
+2. How to integrate your own ``ModelClient``?
 3. How to use ``ModelClient`` directly?
 
 :ref:`ModelClient<core-model_client>` is the standardized protocol and base class for all model inference SDKs (either via APIs or local) to communicate with LightRAG internal components/classes.

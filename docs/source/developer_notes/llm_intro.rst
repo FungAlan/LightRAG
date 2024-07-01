@@ -1,9 +1,9 @@
 Introduction
 ====================================
 
-Introduction to LLM applations
+Introduction to LLM applications
 -------------------------------------
-All language models are doing is text completion, which means you pass a input text(called "prompt") to the model, and the model will generate the rest of the text for you. The model is trained to predict the next word given the previous words, so it can generate text that is coherent and relevant to the prompt.
+All language models are doing is text completion, which means you pass an input text (called "prompt") to the model, and the model will generate the rest of the text for you. The model is trained to predict the next word given the previous words, so it can generate text that is coherent and relevant to the prompt.
 However, most API providers such as OpenAI, Anthropic provide the model in Chat Completions API, which take a list of messages instead of a `single text` as input. Why is that? We will have our assumptions in the next section.
 
 Here is one example from OpenAI:
@@ -58,11 +58,11 @@ If we follow `Llama3 special tokens <https://llama.meta.com/docs/model-cards-and
 
 And the model will generate the text response with `<|end_of_text|>` token to denote the end of the text.
 
-The special tokens vary from different language models, and with propetriary models, most of them dont disclose the special tokens. Why?
+The special tokens vary from different language models, and with proprietary models, most of them dont disclose the special tokens. Why?
 
 1. They keep more secrets about their model.
 
-2. Without knowing the special tokens, developers will be more dependant on their API, especially for advanced features like `Tools`, `Special output format`.
+2. Without knowing the special tokens, developers will be more dependent on their API, especially for advanced features like `Tools`, `Special output format`.
 
 But, you don't have to use their advanced features, our library in default will support those advanced features, ensuring developers to have `maximum control` and be almost model-agnostic.
 

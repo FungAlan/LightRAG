@@ -7,7 +7,7 @@ The full code for this tutorial can be found in `use_cases/rag_hotpotqa.py <http
 
 RAG (Retrieval-Augmented Generation) pipelines leverage a retriever to fetch relevant context from a knowledge base (e.g., a document database) which is then fed to an LLM generator with the query to produce the answer. This allows the model to generate more contextually relevant answers.
 
-Thus, to evaluate a RAG pipeline, we can assess both the quality of the retrieved context and the quality of the final generated answer. Speciafically, in this tutorial, we will use the following evaluators and their corresponding metrics.
+Thus, to evaluate a RAG pipeline, we can assess both the quality of the retrieved context and the quality of the final generated answer. Specifically, in this tutorial, we will use the following evaluators and their corresponding metrics.
 
 - :class:`RetrieverEvaluator <eval.evaluators.RetrieverEvaluator>`: This evaluator is used to evaluate the performance of the retriever component of the RAG pipeline. It has the following metric functions:
     - :obj:`compute_recall`: This function computes the recall of the retriever. It is defined as the number of relevant documents retrieved by the retriever divided by the total number of relevant documents in the knowledge base.
